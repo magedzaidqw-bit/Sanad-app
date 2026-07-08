@@ -1,0 +1,20 @@
+{
+  "name": "سند - إدارة حلقات تحفيظ القرآن الكريم",
+  "short_name": "سند",
+  "description": "نظام متكامل لإدارة حلقات تحفيظ القرآن الكريم: الطلاب، الحضور، الحفظ والمراجعة، التقارير، وأولياء الأمور",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a1e12",
+  "theme_color": "#0d2818",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "sanad-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
