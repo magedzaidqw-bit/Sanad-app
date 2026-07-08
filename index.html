@@ -897,14 +897,10 @@ document.addEventListener('click', function(e) {
   menu.classList.remove('open');
 });
 
-// إلغاء Service Worker نهائياً لمنع مشاكل الكاش
+// تسجيل Service Worker لجعل التطبيق قابلاً للتثبيت (PWA حقيقي) على أندرويد
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then(regs => {
-    regs.forEach(r => r.unregister());
-
-  });
-}
-</script>
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}</script>
 
 <script>
 // ===================== STATE & HELPERS =====================
